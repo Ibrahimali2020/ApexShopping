@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/ApexShopping/static/css/main.a8a3b480.css",
-    "main.js": "/ApexShopping/static/js/main.29c9c1aa.js",
-    "index.html": "/ApexShopping/index.html",
-    "main.a8a3b480.css.map": "/ApexShopping/static/css/main.a8a3b480.css.map",
-    "main.29c9c1aa.js.map": "/ApexShopping/static/js/main.29c9c1aa.js.map"
+    "main.css": "/apexShopping/static/css/main.a8a3b480.css",
+    "main.js": "/apexShopping/static/js/main.29c9c1aa.js",
+    "index.html": "/apexShopping/index.html",
+    "main.a8a3b480.css.map": "/apexShopping/static/css/main.a8a3b480.css.map",
+    "main.29c9c1aa.js.map": "/apexShopping/static/js/main.29c9c1aa.js.map"
   },
   "entrypoints": [
     "static/css/main.a8a3b480.css",
