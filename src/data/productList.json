@@ -1,0 +1,74 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Laptop HP Zbook",
+      "details": "HP with 8GB Ram and Core i7 Processor",
+      "price": 1800,
+      "imageURL": "./img/Laptop HP Zbook.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Smartphone Samsung Galaxy S21",
+      "details": "Samsung flagship with 128GB storage and 6.2-inch display",
+      "price": 999,
+      "imageURL": "./img/Smartphone Samsung Galaxy S21.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Camera Canon EOS Rebel T7i",
+      "details": "DSLR camera with 24.2MP and Full HD video recording",
+      "price": 699,
+      "imageURL": "./img/Camera Canon EOS Rebel T7i.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Smart TV LG OLED C1",
+      "details": "55-inch OLED TV with 4K resolution and webOS",
+      "price": 1499,
+      "imageURL": "./img/Smart TV LG OLED C1.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Gaming Console PlayStation 5",
+      "details": "Next-gen gaming console with 825GB SSD and 4K gaming support",
+      "price": 499,
+      "imageURL": "./img/Gaming Console PlayStation 5.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Coffee Maker Keurig K-Elite",
+      "details": "Single-serve coffee maker with strong brew setting",
+      "price": 129,
+      "imageURL": "./img/Coffee Maker Keurig K-Elite.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Wireless Headphones Bose QuietComfort 35 II",
+      "details": "Noise-canceling headphones with built-in Google Assistant",
+      "price": 299,
+      "imageURL": "./img/Wireless Headphones Bose QuietComfort 35 II.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Fitness Tracker Fitbit Charge 4",
+      "details": "Advanced fitness tracker with built-in GPS",
+      "price": 149,
+      "imageURL": "./img/Fitness Tracker Fitbit Charge 4.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Robot Vacuum iRobot Roomba 980",
+      "details": "Smart vacuum with mapping and Wi-Fi connectivity",
+      "price": 699,
+      "imageURL": "./img/Robot Vacuum iRobot Roomba 980.jpg"
+    },
+    {
+      "id": "10",
+      "name": "Portable Bluetooth Speaker JBL Flip 5",
+      "details": "Waterproof portable speaker with 12 hours of playtime",
+      "price": 89,
+      "imageURL": "./img/Portable Bluetooth Speaker JBL Flip 5.jpg"
+    }
+  ]
+}

@@ -1,13 +1,98 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.app {
+  min-height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.emptycart {
+height: 400px;
+padding: 50px;
+margin: 20px auto;
+width: 600px;
 }
+
+.emptycart p, .emptycart h5 {
+  padding: 20px;
+}
+ .icon {
+  margin-left: 10px;
+}
+
+.search {
+  width: 300px;
+}
+
+img {
+  height: 100%;
+  width: 100px;
+  margin-bottom: 10px;
+  /* object-fit: contain; */
+}
+
+.detail img {
+  height: 100%;
+  width: 200px;
+}
+
+.detail {
+  margin: 50px;
+}
+
+
+/* cart icon */
+.badge {
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+  background-color: #c67605;
+}
+#lblCartCount {
+    font-size: 15px;
+    background: #ff0000;
+    color: #fff;
+    padding: 0 5px;
+    vertical-align: top;
+    margin-left: -10px; 
+}
+
+
+
+
+/* Add this CSS to your stylesheets or components where you define styles */
+.card {
+  background-color: #fff;
+  margin: 25px;
+  padding: 25px;
+  width: 270px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ddd; /* Border color when not hovered */
+  transition: border-color 0.3s ease; /* Smooth transition for the border color */
+}
+
+.card:hover {
+  border-color: #007bff; /* Border color on hover */
+}
+
+/* You can customize the hover effect to fit your design */
+.card:hover img {
+  transform: scale(1.1); /* Example: Scale the image on hover */
+}
+
+
+.card button {
+  position: absolute;
+  bottom: 10px;
+  left: 45%;
+  width: 70%;
+  margin:0 20px ;
+  transform: translateX(-50%);
+  transition: background-color 0.3s ease; /* Smooth transition for button background color */
+}
+
+/* Add any other styles you need for your card */
