@@ -30,15 +30,16 @@ export default function Cart() {
       </>
       }
 
-      {cartProducts.length === 0 && <div className='bg-light text-center emptycart'>
-        <FontAwesomeIcon
-          icon={faCartShopping}
-          size="2xl"
-          style={{ color: "#2361cd", }}
-        />
-        <h5>Your cart is empty</h5>
-        <p>You have not added item to your card.</p>
-      </div>}
+      {cartProducts.length === 0 &&
+        <div className='bg-light text-center emptycart container'>
+          <FontAwesomeIcon
+            icon={faCartShopping}
+            size="2xl"
+            style={{ color: "#2361cd", }}
+          />
+          <h5>Your cart is empty</h5>
+          <p>You have not added item to your card.</p>
+        </div>}
     </>
   )
 }
