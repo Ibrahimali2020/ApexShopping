@@ -1,14 +1,18 @@
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import Product from '../../components/Product'
 import { clearAllItems } from './cartSlice'
+import Product from '../products/Product'
 
 
 export default function Cart() {
   const cartProducts = useSelector(store => store.cart.cartProducts)
   const dispatch = useDispatch()
+
+  useEffect(() => {
+    localStorage.setItem('cartProducts', JSON.stringify(cartProducts))
+  }, [cartProducts])
 
   return (
     <>

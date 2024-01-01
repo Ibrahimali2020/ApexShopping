@@ -1,13 +1,15 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { addToCart, removeFromCart } from '../features/cart/cartSlice'
+import { addToCart, removeFromCart } from '../cart/cartSlice'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartPlus, faTrashCan } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 
 export default function Product({ product }) {
   const cartProducts = useSelector(store => store.cart.cartProducts)
+
   const dispatch = useDispatch()
+
 
   return (
     <Link className='card text-decoration-none' to={`/${product.id}`} >
@@ -21,6 +23,7 @@ export default function Product({ product }) {
           onClick={(e) => {
             e.preventDefault()
             dispatch(addToCart(product))
+            console.log(cartProducts.includes(product));
           }
           }
         >Add to cart
@@ -38,6 +41,6 @@ export default function Product({ product }) {
         </button>}
 
       </div>
-    </Link>
+    </Link >
   )
 }

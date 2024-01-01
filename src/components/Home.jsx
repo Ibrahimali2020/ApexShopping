@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
-import Product from './Product'
 import { ToastContainer } from 'react-toastify'
 import { useDispatch, useSelector } from 'react-redux'
 import productList from '../data/productList.json'
 import { getProducts } from '../features/products/productSlice'
+import Product from '../features/products/Product'
 
 export default function Home() {
 
@@ -13,11 +13,12 @@ export default function Home() {
 
   useEffect(() => {
     if (searchTerm === '') dispatch(getProducts(productList.products))
+
     dispatch(getProducts(productList.products
       .filter(product => product.name.toLocaleLowerCase()
         .includes(searchTerm.toLocaleLowerCase()))))
-
   }, [dispatch, searchTerm])
+
 
   return (
     <div className='d-flex flex-wrap justify-content-start  '>
@@ -25,6 +26,7 @@ export default function Home() {
         <Product product={product} key={product.id} />
       )}
       <ToastContainer />
+
     </div>
   )
 }

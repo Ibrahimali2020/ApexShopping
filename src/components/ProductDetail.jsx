@@ -9,13 +9,12 @@ export default function ProductDetail() {
   const products = useSelector(store => store.product.products)
   const cartProducts = useSelector(store => store.cart.cartProducts)
   const dispatch = useDispatch()
-
   const { id } = useParams()
   const selectedProduct = products.find(product => product.id === id)
 
   return (
     <div className='detail' >
-      <img src={selectedProduct.imageURL} alt="#" />
+      <img src={selectedProduct.imageURL} alt={selectedProduct.name} />
       <div>
         <h5>{selectedProduct.name}</h5>
         <p>{selectedProduct.details}</p>

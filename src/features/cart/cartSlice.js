@@ -1,11 +1,18 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { showNotification } from "../../helper";
-import { toast } from "react-toastify";
+
+const getInitialCartProducts = () => {
+  if (!localStorage.getItem('cartProducts')) localStorage.setItem('cartProducts', JSON.stringify([]))
+  const storedcartProducts = localStorage.getItem('cartProducts')
+  return JSON.parse(storedcartProducts)
+}
 
 
 const initialState = {
-  cartProducts: []
+  cartProducts: getInitialCartProducts()
 }
+
+
 
 const cartSlice = createSlice({
   name: 'cart',
@@ -25,5 +32,7 @@ const cartSlice = createSlice({
     }
   }
 })
+
+
 export const { addToCart, removeFromCart, clearAllItems } = cartSlice.actions
 export default cartSlice.reducer;

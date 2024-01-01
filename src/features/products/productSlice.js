@@ -1,7 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+const getInitialProducts = () => {
+  if (!localStorage.getItem('products')) localStorage.setItem('products', JSON.stringify([]))
+  const storedproducts = localStorage.getItem('products')
+  return JSON.parse(storedproducts)
+}
+
 const initialState = {
-  products: [],
+  products: getInitialProducts(),
   searchTerm: ''
 }
 const productSlice = createSlice({

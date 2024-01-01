@@ -7,10 +7,22 @@ import Cart from './features/cart/Cart';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
 import ProductDetail from './components/ProductDetail';
-
+import { useEffect } from 'react';
+import { useSelector } from 'react-redux';
 
 
 function App() {
+  const products = useSelector(store => store.product.products)
+  const cartProducts = useSelector(store => store.cart.cartProducts)
+
+  useEffect(() => {
+    localStorage.setItem('products', JSON.stringify(products))
+  }, [products])
+
+  useEffect(() => {
+    localStorage.setItem('cartProducts', JSON.stringify(cartProducts))
+  }, [cartProducts])
+
   return (
     <BrowserRouter>
       <Navbar />
