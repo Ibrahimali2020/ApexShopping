@@ -79,14 +79,7 @@
       "price": 89,
       "imageURL": "./img/portable.jpg",
       "addedToCart": false
-    },
-    {
-      "id": "11",
-      "name": "Portable Bluetooth Speaker JBL Flip 5",
-      "details": "Waterproof portable speaker with 12 hours of playtime",
-      "price": 89,
-      "imageURL": "./img/portable.jpg",
-      "addedToCart": false
     }
+
   ]
 }
